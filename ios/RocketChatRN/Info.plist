@@ -64,6 +64,10 @@
 			</dict>
 		</dict>
 	</dict>
+  <key>NSLocationAlwaysUsageDescription</key>
+  <string>Share your location with other users</string>
+  <key>NSLocationWhenInUseUsageDescription </key>
+  <string>Share your location with other users</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Take photos to share with other users</string>
 	<key>NSMicrophoneUsageDescription</key>
