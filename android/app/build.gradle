@@ -93,6 +93,24 @@ def enableSeparateBuildPerCPUArchitecture = false
  */
 def enableProguardInReleaseBuilds = false
 
+/**
+ * Get password from Keychain
+ */
+def getPassword(String currentUser, String keyChain) {
+    def stdout = new ByteArrayOutputStream()
+    def stderr = new ByteArrayOutputStream()
+    exec {
+        commandLine 'security', '-q', 'find-generic-password', '-a', currentUser, '-s', keyChain, '-w'
+        standardOutput = stdout
+        errorOutput = stderr
+        ignoreExitValue true
+    }
+    //noinspection GroovyAssignabilityCheck
+    stdout.toString().trim()
+}
+
+def pass = getPassword("Diasbytes", "diasbytes_keystore")
+
 android {
     compileSdkVersion 27
     buildToolsVersion "27.0.3"
@@ -120,9 +138,9 @@ android {
         release {
             if (project.hasProperty('KEYSTORE')) {
                 storeFile file(KEYSTORE)
-                storePassword KEYSTORE_PASSWORD
-                keyAlias KEY_ALIAS
-                keyPassword KEY_PASSWORD
+                storePassword pass
+                keyAlias KEYSTORE_ALIAS
+                keyPassword pass
             }
         }
     }
@@ -216,7 +234,7 @@ dependencies {
     implementation 'com.facebook.fresco:animated-gif:1.10.0'
     implementation 'com.facebook.fresco:animated-webp:1.10.0'
     implementation 'com.facebook.fresco:webpsupport:1.10.0'
-    implementation 'com.google.android.gms:play-services-gcm:16.0.0'
+    implementation 'com.google.android.gms:play-services-gcm:16.1.0'
     implementation('com.crashlytics.sdk.android:crashlytics:2.9.5@aar') {
         transitive = true;
     }
