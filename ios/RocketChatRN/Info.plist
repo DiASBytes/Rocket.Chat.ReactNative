@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.9.0</string>
+	<string>1.9.2</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
@@ -34,7 +34,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>100</string>
+	<string>102</string>
 	<key>Fabric</key>
 	<dict>
 		<key>APIKey</key>
@@ -66,6 +66,10 @@
 	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>Take photos to share with other users</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Share your location with other users</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Share your location with other users</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Use your microphone to record audio messages</string>
 	<key>NSPhotoLibraryUsageDescription</key>
