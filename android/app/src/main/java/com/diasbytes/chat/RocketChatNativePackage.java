@@ -1,4 +1,4 @@
-package chat.rocket.reactnative;
+package com.diasbytes.chat;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;

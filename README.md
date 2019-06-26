@@ -11,7 +11,7 @@
 **Supported Server Versions:** 0.66.0+
 
 ## Download
-<a href="https://play.google.com/store/apps/details?id=chat.rocket.reactnative">
+<a href="https://play.google.com/store/apps/details?id=com.diasbytes.chat">
   <img alt="Download on Google Play" src="https://play.google.com/intl/en_us/badges/images/badge_new.png" height=43>
 </a>
 <a href="https://itunes.apple.com/us/app/rocket-chat-experimental/id1272915472">

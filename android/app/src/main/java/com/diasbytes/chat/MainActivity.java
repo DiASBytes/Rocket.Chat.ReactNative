@@ -1,4 +1,4 @@
-package chat.rocket.reactnative;
+package com.diasbytes.chat;
 
 import android.graphics.drawable.Drawable;
 import android.support.v4.content.ContextCompat;

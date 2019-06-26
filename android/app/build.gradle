@@ -116,7 +116,7 @@ android {
     buildToolsVersion "27.0.3"
 
     defaultConfig {
-        applicationId "chat.rocket.reactnative"
+        applicationId "com.diasbytes.chat"
         minSdkVersion 21
         targetSdkVersion 27
         versionCode VERSIONCODE as Integer
