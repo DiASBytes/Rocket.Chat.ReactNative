@@ -56,6 +56,7 @@ export default class LoginView extends React.Component {
 		const title = navigation.getParam('title', 'Rocket.Chat');
 		return {
 			title,
+			headerLeft: null,
 			headerRight: <LegalButton navigation={navigation} testID='login-view-more' />
 		};
 	}
